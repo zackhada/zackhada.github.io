@@ -45,7 +45,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 14, 39, 0.95);
+            background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
             border-bottom: 1px solid var(--border-color);
@@ -360,6 +360,11 @@
             color: var(--secondary-text);
         }
 
+        /* Font Awesome Icons - Force Grayscale */
+        .fab, .fas {
+            filter: grayscale(100%) !important;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
@@ -563,12 +568,12 @@
             <h2 class="section-title">Resume & Highlights</h2>
             <div class="resume-content">
                 <div class="resume-download">
-                    <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
+                    <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--primary-text); margin-bottom: 1rem;"></i>
                     <h3>Download Resume</h3>
                     <p style="color: var(--secondary-text); margin-bottom: 2rem;">
                         Complete technical background and experience
                     </p>
-                    <a href="Zachary Hada Resume 20250916.pdf" class="btn btn-primary" download>
+                    <a href="./Zachary%20Hada%20Resume%2020250916.pdf" class="btn btn-primary" download="Zachary_Hada_Resume.pdf">
                         <i class="fas fa-download"></i> Download PDF
                     </a>
                 </div>
@@ -656,9 +661,9 @@
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
-                nav.style.background = 'rgba(10, 14, 39, 0.98)';
+                nav.style.background = 'rgba(10, 10, 10, 0.98)';
             } else {
-                nav.style.background = 'rgba(10, 14, 39, 0.95)';
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
             }
         });
 
