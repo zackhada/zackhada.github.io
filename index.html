@@ -285,12 +285,19 @@
             margin-top: 2rem;
         }
 
-        .resume-download {
-            text-align: center;
+        .resume-preview {
             padding: 2rem;
             background: var(--secondary-bg);
             border-radius: 12px;
             border: 1px solid var(--border-color);
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+
+        .resume-section:last-child {
+            margin-bottom: 0;
         }
 
         .resume-highlights {
@@ -567,15 +574,33 @@
         <div class="container">
             <h2 class="section-title">Resume & Highlights</h2>
             <div class="resume-content">
-                <div class="resume-download">
-                    <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--primary-text); margin-bottom: 1rem;"></i>
-                    <h3>Download Resume</h3>
-                    <p style="color: var(--secondary-text); margin-bottom: 2rem;">
-                        Complete technical background and experience
-                    </p>
-                    <a href="./Zachary%20Hada%20Resume%2020250916.pdf" class="btn btn-primary" download="Zachary_Hada_Resume.pdf">
-                        <i class="fas fa-download"></i> Download PDF
-                    </a>
+                <div class="resume-preview">
+                    <h3 style="margin-bottom: 2rem; color: var(--primary-text);">Resume Overview</h3>
+                    <div class="resume-section">
+                        <h4 style="color: var(--primary-text); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Education</h4>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>Computer Science</strong><br>
+                            <span style="color: var(--secondary-text);">Focus on Data Systems & Software Engineering</span>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h4 style="color: var(--primary-text); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Technical Skills</h4>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>Languages:</strong> <span style="color: var(--secondary-text);">Python, SQL, JavaScript</span><br>
+                            <strong>Technologies:</strong> <span style="color: var(--secondary-text);">Azure, SharePoint, LangChain, OpenAI</span><br>
+                            <strong>Specialties:</strong> <span style="color: var(--secondary-text);">ETL Pipelines, Document Processing, Financial Data</span>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h4 style="color: var(--primary-text); margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Experience</h4>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Data Engineer</strong><br>
+                            <span style="color: var(--secondary-text);">Financial Technology & Real Estate Data Processing</span><br>
+                            <span style="color: var(--secondary-text); font-size: 0.9rem;">• Built automated ETL pipelines reducing processing time by 97%</span><br>
+                            <span style="color: var(--secondary-text); font-size: 0.9rem;">• Developed AI-powered document validation systems</span><br>
+                            <span style="color: var(--secondary-text); font-size: 0.9rem;">• Created intelligent stock analysis agents using LangChain</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="resume-highlights">
                     <h3 style="margin-bottom: 2rem;">Key Highlights</h3>
